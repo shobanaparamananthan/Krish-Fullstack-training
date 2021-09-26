@@ -12,13 +12,11 @@ public class bigdecimal{
         salesTax = salesTax.setScale(2, BigDecimal.ROUND_HALF_UP);
         BigDecimal total = amount.add(salesTax);
           
-        NumberFormat currency = NumberFormat.getCurrencyInstance();
+        
   
-        String s = "Amount: " + currency.format(amount) + "\n" + 
-                   "Tax: " + currency.format(salesTax) + 
-                   "\n" + "Total: " + currency.format(total) + "\n";
-  
-        System.out.println(s);
+        System.out.println(amount);
+        System.out.println(total);
+        System.out.println(tax);
     }
 }
      
