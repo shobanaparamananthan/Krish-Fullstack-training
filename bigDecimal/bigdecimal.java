@@ -14,9 +14,9 @@ public class bigdecimal{
     float f2 = 0.2f;
     System.out.println("Float: " + (f1 - f2));
 
-    BigDecimal bd1 = new BigDecimal("0.3");
-    BigDecimal bd2 = new BigDecimal("0.2");
-    System.out.println("BigDec: " + (bd1.subtract(bd2)));
+    BigDecimal bd1 = BigDecimal.valueOf(d1);
+    BigDecimal bd2 = BigDecimal.valueOf(d2);
+    System.out.println("BigDecimal: " + (bd1.subtract(bd2)));
     }
 }
      
